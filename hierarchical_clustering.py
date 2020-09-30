@@ -106,7 +106,7 @@ plt.show()
 
 
 result = np.column_stack((ids.T, embed2d, clusters))
-result.dump("clustering_result.dat"
+result.dump("clustering_result.dat")
 
 import math
 def dist(x1,y1,x2,y2):
