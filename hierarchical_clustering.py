@@ -14,8 +14,8 @@ from sklearn.metrics import euclidean_distances
 from sklearn.decomposition import PCA
 
 #load files
-ids = np.load("recipe_ids.dat")
-dist_mat = np.load("dist_matrix.dat")
+ids = np.load("recipe_ids.dat", allow_pickle=True)
+dist_mat = np.load("dist_matrix.dat", allow_pickle=True)
 dist_mat = dist_mat + dist_mat.T - np.diag(dist_mat.diagonal())
 #dist_mat.shape
 
